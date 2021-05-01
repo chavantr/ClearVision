@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ClearVision</string>
+    <string name="please_provide_camera_permission_to_continue">Please provide camera permission to continue.</string>
+</resources>
