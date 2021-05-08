@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        tools:context=".SuccessResultActivity">
+
+        <LinearLayout
+            android:id="@+id/lnrPatientName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtNameTitle"
+                android:layout_width="0dp"
+                android:text="@string/name"
+                android:layout_height="wrap_content"
+                android:layout_weight="50" />
+
+            <TextView
+                android:id="@+id/txtNameValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lnrDoctorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            app:layout_constraintTop_toBottomOf="@id/lnrPatientName">
+
+            <TextView
+                android:id="@+id/txtDNameTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/doctor_name"
+                android:layout_weight="50" />
+
+            <TextView
+                android:id="@+id/txtDNameValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnrTabletName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            app:layout_constraintTop_toBottomOf="@id/lnrDoctorName">
+
+            <TextView
+                android:id="@+id/txtTNameTitle"
+                android:layout_width="0dp"
+                android:text="@string/medicine_name"
+                android:layout_height="wrap_content"
+                android:layout_weight="50" />
+
+            <TextView
+                android:id="@+id/txtTNameValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnrDescriptionName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            app:layout_constraintTop_toBottomOf="@id/lnrTabletName">
+
+            <TextView
+                android:id="@+id/txtDesNameTitle"
+                android:layout_width="0dp"
+                android:text="@string/description"
+                android:layout_height="wrap_content"
+                android:layout_weight="50" />
+
+            <TextView
+                android:id="@+id/txtDesNameValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnrQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            app:layout_constraintTop_toBottomOf="@id/lnrDescriptionName">
+
+            <TextView
+                android:id="@+id/txtQuantityTitle"
+                android:layout_width="0dp"
+                android:text="@string/quantity"
+                android:layout_height="wrap_content"
+                android:layout_weight="50" />
+
+            <TextView
+                android:id="@+id/txtQuantityValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnrExpiry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            app:layout_constraintTop_toBottomOf="@id/lnrQuantity">
+
+            <TextView
+                android:id="@+id/txtExpiryTitle"
+                android:layout_width="0dp"
+                android:text="@string/expiry_date"
+                android:layout_height="wrap_content"
+                android:layout_weight="50" />
+
+            <TextView
+                android:id="@+id/txtExpiryValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnrMorning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            app:layout_constraintTop_toBottomOf="@id/lnrExpiry">
+
+            <TextView
+                android:id="@+id/txtMorningTitle"
+                android:layout_width="0dp"
+                android:text="@string/at_morning"
+                android:layout_height="wrap_content"
+                android:layout_weight="50" />
+
+            <TextView
+                android:id="@+id/txtMorningValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnrNoon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            app:layout_constraintTop_toBottomOf="@id/lnrMorning">
+
+            <TextView
+                android:id="@+id/txtNoonTitle"
+                android:layout_width="0dp"
+                android:text="@string/at_noon"
+                android:layout_height="wrap_content"
+                android:layout_weight="50" />
+
+            <TextView
+                android:id="@+id/txtNoonValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnrNight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            app:layout_constraintTop_toBottomOf="@id/lnrNoon">
+
+            <TextView
+                android:id="@+id/txtNightTitle"
+                android:layout_width="0dp"
+                android:text="@string/at_night"
+                android:layout_height="wrap_content"
+                android:layout_weight="50" />
+
+            <TextView
+                android:id="@+id/txtNightValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnrNoOfDays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            app:layout_constraintTop_toBottomOf="@id/lnrNight">
+
+            <TextView
+                android:id="@+id/txtNoTitle"
+                android:layout_width="0dp"
+                android:text="@string/no_of_days"
+                android:layout_height="wrap_content"
+                android:layout_weight="50" />
+
+            <TextView
+                android:id="@+id/txtNoValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnrMedicineType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            app:layout_constraintTop_toBottomOf="@id/lnrNoOfDays">
+
+            <TextView
+                android:id="@+id/txtTypeTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50" />
+
+            <TextView
+                android:id="@+id/txtTypeValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

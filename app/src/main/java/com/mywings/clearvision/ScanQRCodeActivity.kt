@@ -22,7 +22,7 @@ class ScanQRCodeActivity : AppCompatActivity() {
         mCodeScanner = CodeScanner(this, scannerView)
         mCodeScanner?.decodeCallback = DecodeCallback { result ->
             runOnUiThread {
-                Log.d("test", result.toString())
+                
             }
         }
     }
