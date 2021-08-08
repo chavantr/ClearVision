@@ -3,12 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_bg"
+    android:paddingBottom="16dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        android:paddingBottom="16dp"
         tools:context=".SuccessResultActivity">
 
         <LinearLayout
@@ -16,7 +19,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:background="@drawable/ic_shape"
+            android:importantForAccessibility="no"
             android:orientation="horizontal"
+            android:padding="16dp"
             android:weightSum="100"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -25,25 +31,35 @@
             <TextView
                 android:id="@+id/txtNameTitle"
                 android:layout_width="0dp"
-                android:text="@string/name"
                 android:layout_height="wrap_content"
-                android:layout_weight="50" />
+                android:layout_weight="50"
+                android:importantForAccessibility="no"
+                android:text="@string/name"
+                android:textColor="@color/color_red"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/txtNameValue"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="50" />
+                android:layout_weight="50"
+                android:importantForAccessibility="no"
+                android:textColor="@color/color_red"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
-
 
         <LinearLayout
             android:id="@+id/lnrDoctorName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:background="@drawable/ic_shape"
+            android:importantForAccessibility="no"
             android:orientation="horizontal"
+            android:padding="16dp"
             android:weightSum="100"
             app:layout_constraintTop_toBottomOf="@id/lnrPatientName">
 
@@ -51,14 +67,22 @@
                 android:id="@+id/txtDNameTitle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:importantForAccessibility="no"
                 android:text="@string/doctor_name"
-                android:layout_weight="50" />
+                android:textColor="@color/color_red"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/txtDNameValue"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="50" />
+                android:layout_weight="50"
+                android:importantForAccessibility="no"
+                android:textColor="@color/color_red"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -67,22 +91,30 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:background="@drawable/ic_shape"
             android:orientation="horizontal"
+            android:padding="16dp"
             android:weightSum="100"
             app:layout_constraintTop_toBottomOf="@id/lnrDoctorName">
 
             <TextView
                 android:id="@+id/txtTNameTitle"
                 android:layout_width="0dp"
-                android:text="@string/medicine_name"
                 android:layout_height="wrap_content"
-                android:layout_weight="50" />
+                android:layout_weight="50"
+                android:text="@string/medicine_name"
+                android:textColor="@color/color_red"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/txtTNameValue"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="50" />
+                android:layout_weight="50"
+                android:textColor="@color/color_red"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -91,22 +123,30 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:background="@drawable/ic_shape"
             android:orientation="horizontal"
+            android:padding="16dp"
             android:weightSum="100"
             app:layout_constraintTop_toBottomOf="@id/lnrTabletName">
 
             <TextView
                 android:id="@+id/txtDesNameTitle"
                 android:layout_width="0dp"
-                android:text="@string/description"
                 android:layout_height="wrap_content"
-                android:layout_weight="50" />
+                android:layout_weight="50"
+                android:text="@string/description"
+                android:textColor="@color/color_red"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/txtDesNameValue"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="50" />
+                android:layout_weight="50"
+                android:textColor="@color/color_red"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -115,22 +155,30 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:background="@drawable/ic_shape"
             android:orientation="horizontal"
+            android:padding="16dp"
             android:weightSum="100"
             app:layout_constraintTop_toBottomOf="@id/lnrDescriptionName">
 
             <TextView
                 android:id="@+id/txtQuantityTitle"
                 android:layout_width="0dp"
-                android:text="@string/quantity"
                 android:layout_height="wrap_content"
-                android:layout_weight="50" />
+                android:layout_weight="50"
+                android:text="@string/quantity"
+                android:textColor="@color/color_red"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/txtQuantityValue"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="50" />
+                android:layout_weight="50"
+                android:textColor="@color/color_red"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -139,22 +187,30 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:background="@drawable/ic_shape"
             android:orientation="horizontal"
+            android:padding="16dp"
             android:weightSum="100"
             app:layout_constraintTop_toBottomOf="@id/lnrQuantity">
 
             <TextView
                 android:id="@+id/txtExpiryTitle"
                 android:layout_width="0dp"
-                android:text="@string/expiry_date"
                 android:layout_height="wrap_content"
-                android:layout_weight="50" />
+                android:layout_weight="50"
+                android:text="@string/expiry_date"
+                android:textColor="@color/color_red"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/txtExpiryValue"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="50" />
+                android:layout_weight="50"
+                android:textColor="@color/color_red"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -163,22 +219,30 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:background="@drawable/ic_shape"
             android:orientation="horizontal"
+            android:padding="16dp"
             android:weightSum="100"
             app:layout_constraintTop_toBottomOf="@id/lnrExpiry">
 
             <TextView
                 android:id="@+id/txtMorningTitle"
                 android:layout_width="0dp"
-                android:text="@string/at_morning"
                 android:layout_height="wrap_content"
-                android:layout_weight="50" />
+                android:layout_weight="50"
+                android:text="@string/at_morning"
+                android:textColor="@color/color_red"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/txtMorningValue"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="50" />
+                android:layout_weight="50"
+                android:textColor="@color/color_red"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -187,22 +251,30 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:background="@drawable/ic_shape"
             android:orientation="horizontal"
+            android:padding="16dp"
             android:weightSum="100"
             app:layout_constraintTop_toBottomOf="@id/lnrMorning">
 
             <TextView
                 android:id="@+id/txtNoonTitle"
                 android:layout_width="0dp"
-                android:text="@string/at_noon"
                 android:layout_height="wrap_content"
-                android:layout_weight="50" />
+                android:layout_weight="50"
+                android:text="@string/at_noon"
+                android:textColor="@color/color_red"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/txtNoonValue"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="50" />
+                android:layout_weight="50"
+                android:textColor="@color/color_red"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -211,22 +283,30 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:background="@drawable/ic_shape"
             android:orientation="horizontal"
+            android:padding="16dp"
             android:weightSum="100"
             app:layout_constraintTop_toBottomOf="@id/lnrNoon">
 
             <TextView
                 android:id="@+id/txtNightTitle"
                 android:layout_width="0dp"
-                android:text="@string/at_night"
                 android:layout_height="wrap_content"
-                android:layout_weight="50" />
+                android:layout_weight="50"
+                android:text="@string/at_night"
+                android:textColor="@color/color_red"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/txtNightValue"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="50" />
+                android:layout_weight="50"
+                android:textColor="@color/color_red"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -235,22 +315,30 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:background="@drawable/ic_shape"
             android:orientation="horizontal"
+            android:padding="16dp"
             android:weightSum="100"
             app:layout_constraintTop_toBottomOf="@id/lnrNight">
 
             <TextView
                 android:id="@+id/txtNoTitle"
                 android:layout_width="0dp"
-                android:text="@string/no_of_days"
                 android:layout_height="wrap_content"
-                android:layout_weight="50" />
+                android:layout_weight="50"
+                android:text="@string/no_of_days"
+                android:textColor="@color/color_red"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/txtNoValue"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="50" />
+                android:layout_weight="50"
+                android:textColor="@color/color_red"
+                android:textSize="18sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -258,7 +346,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/ic_shape"
             android:orientation="horizontal"
+            android:padding="16dp"
             android:weightSum="100"
             app:layout_constraintTop_toBottomOf="@id/lnrNoOfDays">
 
@@ -266,14 +357,19 @@
                 android:id="@+id/txtTypeTitle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="50" />
+                android:layout_weight="50"
+                android:textColor="@color/color_red"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/txtTypeValue"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="50" />
+                android:layout_weight="50"
+                android:textColor="@color/color_red"
+                android:textSize="18sp"
+                android:textStyle="bold" />
         </LinearLayout>
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

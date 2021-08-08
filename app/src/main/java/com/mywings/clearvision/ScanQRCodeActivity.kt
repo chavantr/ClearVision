@@ -1,12 +1,8 @@
 package com.mywings.clearvision
 
-import android.Manifest
-import android.content.pm.PackageManager
+import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.app.ActivityCompat
-import androidx.core.content.ContextCompat
 import com.budiyev.android.codescanner.CodeScanner
 import com.budiyev.android.codescanner.CodeScannerView
 import com.budiyev.android.codescanner.DecodeCallback
@@ -22,7 +18,10 @@ class ScanQRCodeActivity : AppCompatActivity() {
         mCodeScanner = CodeScanner(this, scannerView)
         mCodeScanner?.decodeCallback = DecodeCallback { result ->
             runOnUiThread {
-                
+                val intent = Intent(this@ScanQRCodeActivity, SuccessResultActivity::class.java)
+                intent.putExtra("extra", result.toString())
+                intent.putExtra("flag", getIntent().getBooleanExtra("flag", false))
+                startActivity(intent)
             }
         }
     }

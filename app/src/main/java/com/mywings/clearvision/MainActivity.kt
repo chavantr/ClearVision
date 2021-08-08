@@ -28,8 +28,21 @@ class MainActivity : AppCompatActivity() {
                 this, permissions,
                 EXTERNAL_REQUEST
             )
-        } else {
+        }
+
+        btnScanQR.setOnClickListener {
             val intent = Intent(this@MainActivity, ScanQRCodeActivity::class.java)
+            intent.putExtra("flag", true)
+            startActivity(intent)
+        }
+
+        btnLocateMe.setOnClickListener {
+
+        }
+
+        btnTakeMedicine.setOnClickListener {
+            val intent = Intent(this@MainActivity, ScanQRCodeActivity::class.java)
+            intent.putExtra("flag", false)
             startActivity(intent)
         }
     }
@@ -41,10 +54,15 @@ class MainActivity : AppCompatActivity() {
     ) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-            val intent = Intent(this@MainActivity, ScanQRCodeActivity::class.java)
-            startActivity(intent)
+            lblWarning.visibility = View.GONE
+            btnLocateMe.visibility = View.VISIBLE
+            btnScanQR.visibility = View.VISIBLE
+            btnTakeMedicine.visibility = View.VISIBLE
         } else {
             lblWarning.visibility = View.VISIBLE
+            btnLocateMe.visibility = View.GONE
+            btnScanQR.visibility = View.GONE
+            btnTakeMedicine.visibility = View.GONE
         }
     }
 }

@@ -11,4 +11,7 @@
     <string name="at_noon">At noon</string>
     <string name="at_night">At night</string>
     <string name="no_of_days">Number of days</string>
+    <string name="scan_qr">Scan QR</string>
+    <string name="locate_me">Locate me</string>
+    <string name="take_medicine">Take medicine</string>
 </resources>

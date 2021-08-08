@@ -6,6 +6,8 @@
     <uses-permission android:name="android.permission.FLASHLIGHT" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
         android:allowBackup="true"
@@ -14,9 +16,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".MedicineActivity"
+            android:screenOrientation="portrait" />
+
         <activity
             android:name=".SuccessResultActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
+
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait">
@@ -26,9 +34,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".ScanQRCodeActivity"
             android:screenOrientation="portrait" />
-    </application>
 
+        <receiver android:name=".NotificationPublisher" />
+    </application>
 </manifest>
